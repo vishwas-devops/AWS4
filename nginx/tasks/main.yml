@@ -1,0 +1,6 @@
+---
+# tasks file for nginx
+
+- name: install nginx on centos or ubuntu
+  import_tasks: debian.yml
+  when: ansible_os_family == 'Debian'
